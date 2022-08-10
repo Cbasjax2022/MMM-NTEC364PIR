@@ -23,6 +23,7 @@ module.exports = NodeHelper.create({
 	getDataPIR: function() {
 		//exec('pkill -f "python3 -u ' + __dirname + '/pir.py"', { timeout: 500 });
 		const process = spawn('python3', ['-u', __dirname + '/pir.py', this.config.sensorPin]);
+		const process = spawn('python3', ['-u', __dirname + '/GspreadCall.py']);
 
 		var self = this;
 		process.stdout.on('data', function(data) {
