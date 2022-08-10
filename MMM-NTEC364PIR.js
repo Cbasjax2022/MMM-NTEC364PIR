@@ -8,7 +8,7 @@
  * MIT Licensed.
  */
 
-Module.register("MMM-NTEC364PIR", {
+Module.register("MMM-PIR-Sensor-Lite", {
 
 	// Default module config
 	defaults: {
